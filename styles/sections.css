@@ -1,0 +1,123 @@
+#projetos{
+    text-align: center;
+    margin-top: 125px;
+    
+    >p{
+        font: var(--subtitle);
+        color: var(--red);
+    }
+
+    h2{
+        color: var(--gray-600);
+        font: var(--title-md)
+    }
+}
+
+#cards{
+    max-width: 1040px;
+    margin: 56px auto 0;
+
+    figure{
+        width: 330px;
+        margin: 0;
+        background-color: var(--gray-300);
+        padding: 10px;
+        border-radius: 7px;
+        display: flex;
+        gap: 20px;
+
+        img{
+            width: 306px;
+            height: 156px;
+            object-fit: cover;
+        }
+
+        figcaption{
+            h3{
+                font: var(--title-sm);
+                color: var(--gray-600);
+                align-self: start;
+                padding: 0 0 3px 0;
+            }
+
+            p{
+                font: var(--text-sm);
+                color: var(--gray-500);
+                text-align: start;
+                padding: 3px 0 3px 0;
+            }
+        }
+    }
+
+    figure:hover{
+        border: 1px solid var(--blue);
+        padding: 9px;
+        cursor: pointer;
+    }
+}
+
+#services{
+    background-color: var(--gray-100);
+    margin-top: 50px;
+    padding: 80px;
+    text-align: center;
+    height: 480px;
+
+    >p{
+        color: var(--blue);
+        font: var(--subtitle);
+        margin-bottom: 10px;
+    }
+
+    >h2{
+        color: var(--gray-600);
+        font: var(--title-md);
+    }
+
+    >div{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        max-width: 888px;
+        margin: 0 auto;
+        position: relative;
+        bottom: 50px;
+
+
+        figure{
+            border: 2px solid var(--gray-200);
+            border-radius: 7px;
+            width: 280px;
+            padding: 20px;
+            height: 155px;
+            position: relative;
+
+            &:hover{
+                border: 2px solid var(--gray-300);  
+            }
+
+            img{
+                width: 48px;
+                align-self: start;
+            }
+
+            figcaption{
+                position: absolute;
+                top: 90px;
+                left: 20px;
+                display: flex;
+                align-items: start;
+                p{
+                    font: var(--text-sm); 
+                    color: var(--gray-500);
+                 }
+     
+                 h5{
+                     font: var(--title-sm);
+                     color: var(--gray-600);
+                 }
+            }
+            
+        }
+    }
+}
